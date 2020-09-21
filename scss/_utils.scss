@@ -1,18 +1,48 @@
-// Backgrounds 
-.bg{
-    &-primary {
+.dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+// Text styles 
+
+.x-large {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+// Buttons 
+
+.btn {
+    display: inline-block;
+    background: $primary-color;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    outline: none;
+    border-radius: 0.35rem;
+    &.btn-primary{
         @include set-background($primary-color);
+        &:hover {
+            background: lighten($primary-color, 10%);
+        }
     }
-    &-dark {
-        @include set-background($dark-color);
-    }
-    &-purple {
-        @include set-background($purple-light);
-    }
-    &-danger {
-        @include set-background($danger-color);
-    }
-    &-success {
-        @include set-background($success-color);
+    &.btn-secondary{
+        @include set-background($secondary-color);
+        &:hover {
+            background: lighten($secondary-color, 10%);
+        }
     }
 }
