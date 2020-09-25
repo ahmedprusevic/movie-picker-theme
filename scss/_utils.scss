@@ -5,6 +5,7 @@
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
 }
 
@@ -33,11 +34,19 @@
 
 .lead {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .text-primary {
     color: $primary-color;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-secondary {
+    color: $secondary-color;
 }
 
 // Buttons 
@@ -65,5 +74,34 @@
         &:hover {
             background: lighten($secondary-color, 10%);
         }
+    }
+    &-submit {
+        width: 100%;
+        padding: 0.75rem 0;
+    }
+}
+
+// Alerts
+
+.alert {
+    padding: 0.75rem;
+    margin: 1.25rem;
+    opacity: 0.9;
+    background: $secondary-color;
+
+    &.alert-primary {
+        @include set-background($primary-color)
+    }
+    &.alert-secondary {
+        @include set-background($secondary-color)
+    }
+    &.alert-dark {
+        @include set-background($dark-color)
+    }
+    &.alert-danger {
+        @include set-background($danger-color)
+    }
+    &.alert-success {
+        @include set-background($success-color)
     }
 }
