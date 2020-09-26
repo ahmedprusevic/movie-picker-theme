@@ -79,3 +79,24 @@ img {
     background: url('../dist/img/home.jpg') no-repeat center center/cover;
     height: 100vh;
 }
+
+// Home 
+.home {
+    margin-top: 3.7rem;
+}
+ .profile-img {
+     width: 25px;
+     border-radius: 50%;
+ }
+ .card {
+    position: relative;
+ }
+
+ .card-img {
+     width: 200px;
+ }
+
+ .card-body {
+     position: absolute;
+     bottom: 5px;
+ }
