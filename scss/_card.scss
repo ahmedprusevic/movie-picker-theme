@@ -1,0 +1,46 @@
+.card {
+    position: relative;
+    height: 300px;
+    display: inline-block;
+    &:hover &-icons{
+        display: flex;
+        justify-content: space-around;
+    }
+    &:hover &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &:hover &-overlay {
+        display: block;
+    }
+    &-img {
+        width: auto;
+        height: 100%;
+    }
+    &-body {
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+    &-icons {
+        width: 100%;
+        display: none;
+    }
+    &-icon {
+        cursor: pointer;
+    }
+    &-overlay {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(155, 32, 32, 0.7);
+    }
+ }
+
