@@ -3,17 +3,22 @@
     flex-direction: column;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
     &:hover &-overlay {
         opacity: 1;
     }
+
     &:hover .watch {
         opacity: 1;
     }
+    
+    
     &-layout{
         display: grid;
         grid-template-columns: repeat(3, 200px);
         justify-content: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        padding-bottom: 3rem;
     }
     &-img {
         width: auto;
@@ -46,6 +51,11 @@
         top: 0;
         left: 0;
         background-color: rgba(155, 32, 32, 0.7);
+        
+    }
+    &-heading {
+        text-align: center;
+        margin: 2rem;
     }
  }
 

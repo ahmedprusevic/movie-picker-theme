@@ -57,6 +57,30 @@ img {
     } 
 }
 
+.profile-img {
+    width: 25px;
+    border-radius: 50%;
+}
+.dorp-click {
+   width: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.drop-down {
+   position: absolute;
+   right: 1px;
+   z-index: 1;
+   background-color: $secondary-color;
+}
+
+.drop-link {
+    display: block;
+}
+
+
+
 // Landing
 .landing {
     position: relative;
@@ -83,10 +107,6 @@ img {
 
 // Home 
 .home {
-    margin-top: 3.7rem;
+    padding-top: 3.7rem;
+    background: url('../dist/img/home.jpg') no-repeat center center/cover;
 }
- .profile-img {
-     width: 25px;
-     border-radius: 50%;
- }
- 
