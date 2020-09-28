@@ -1,46 +1,70 @@
 .card {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    height: 300px;
-    display: inline-block;
-    &:hover &-icons{
-        display: flex;
-        justify-content: space-around;
-    }
-    &:hover &-body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
     &:hover &-overlay {
-        display: block;
+        opacity: 1;
+    }
+    &:hover .watch {
+        opacity: 1;
+    }
+    &-layout{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
     }
     &-img {
         width: auto;
-        height: 100%;
+        height: 300px;
     }
     &-body {
-        position: absolute;
-        display: none;
         width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        border: 2px solid $primary-color;
+        border-top: none;
+        padding: .5rem 0;
     }
     &-icons {
         width: 100%;
-        display: none;
+        display: flex;
+        justify-content: space-around;
     }
     &-icon {
         cursor: pointer;
+        position: relative;
     }
     &-overlay {
-        display: none;
-        height: 100%;
+        opacity: 0;
+        height: 300px;
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
         background-color: rgba(155, 32, 32, 0.7);
     }
+ }
+
+ .watch {
+     width: 100px;
+     height: 30px;
+     position: absolute;
+     left: 50%;
+     top:50%;
+     margin-left: -50px;
+     margin-top: -15px;
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.5);
+     outline: none;
+     font-size: 1rem;
+     color: #fff;
+     border: none;
+     text-transform: uppercase;
+     cursor: pointer;
+     opacity: 0;
  }
 
