@@ -73,11 +73,15 @@ img {
    position: absolute;
    right: 1px;
    z-index: 1;
-   background-color: $secondary-color;
+   background-color: #fff;
 }
 
 .drop-link {
     display: block;
+    color: $primary-color;
+    &:hover {
+        color: lighten($primary-color, 25%)
+    }
 }
 
 
@@ -110,6 +114,11 @@ img {
 .home {
     padding-top: 3.7rem;
     background: #000000;
+}
+
+.home-top {
+    max-width: $max-width;
+    margin: auto;
 }
 
  .watch {

@@ -107,3 +107,14 @@
         @include set-background($success-color)
     }
 }
+
+.table {
+    th,td {
+        padding: 1rem;
+        text-align: left;
+    }
+    th {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        color: $primary-color;
+    }
+}
