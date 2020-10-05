@@ -139,3 +139,15 @@ img {
      cursor: pointer;
      opacity: 0;
  }
+//  Posts
+.post {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+.post-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

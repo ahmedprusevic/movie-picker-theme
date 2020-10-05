@@ -1,5 +1,32 @@
 .form {
-    &-heading{
+    .msg {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+    }
+    .msg__textarea {
+        width: 100%;
+        height: 170px;
+        border: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        line-height: 40px;
+        overflow: hidden;
+        resize: none;
+        outline: none;
+        background-image: linear-gradient(
+            0deg,
+            #b2a2cd 2.38%,
+            transparent 2.38%,
+            transparent 50%,
+            #b2a2cd 50%,
+            #b2a2cd 52.38%,
+            transparent 52.38%,
+            transparent 100%
+        );
+        background-size: 80px 80px;
     }
     &-background {
         background-color: rgba(140, 140, 140, .35);

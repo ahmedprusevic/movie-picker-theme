@@ -51,6 +51,10 @@
     color: $secondary-color;
 }
 
+.border-white {
+    border: 1px solid #fff;
+}
+
 // Buttons 
 
 .btn {
@@ -117,4 +121,8 @@
         background-color: rgba($color: #fff, $alpha: 0.8);
         color: $primary-color;
     }
+}
+
+.rounded-img {
+    border-radius: 50%;
 }
